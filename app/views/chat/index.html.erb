@@ -1,0 +1,29 @@
+<%= react_component 'App', {messages: Message.order(created_at: :desc).limit(5)} %>
+
+<script>
+
+//   var refreshMessages = function() {
+//     var url = 'http://localhost:3000/messages';
+//     $.get(url, {limit: 5}, function(messages) {
+//       $('#messages').html('');
+//       for (var i=0; i < messages.length; i+=1) {
+//         $('#messages').append("<li>" + messages[i].body + "</li>");
+//       }
+//     });
+//   };
+// 
+//   setInterval(refreshMessages, 5000);
+//   refreshMessages();
+// 
+//   $('#message-form').on('submit', function(event){
+//     event.preventDefault();
+// 
+//     var message = $(this).serialize();
+//     var bodyInput = $(this).find('input[name="body"]');
+//     bodyInput.val('');
+// 
+//     $.post('http://localhost:3000/messages', message);
+//   });
+// 
+// });
+</script>
